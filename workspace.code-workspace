@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"path": "..\\Ejercicio git\\.git"
+	},
+	{
+		"path": "."
+	},
+	{
+		"name": ".git",
+		"path": ".git\\.git"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "frontend_1"
+  }
+}
