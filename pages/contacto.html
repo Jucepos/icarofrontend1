@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
- 
+
     <header>
       <h1>Desarrollo Web Front Endo</h1>
       <nav>
@@ -17,13 +17,79 @@
         <a href="/pages/contacto.html">Contacto</a>
         <a href="/pages/productos.html">Productos</a>
       </nav>
-   <main>
-     <h2>Soy Contacto</h2>
-   </main>
+  <main>
+    <h2>Formulario de contacto</h2>
+
+    <form id="form">
+
+  
+    <div>
+    <fieldset>
+      <legend>Datos personales</legend>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre">
+      <br>
+      <br>
+
+      <label for="apellido">Apellido</label>
+      <input type="text" id="apellido" name="apellido">
+
+      <br>
+      <br>
+
+      <label for="edad">Edad</label>
+      <input type="number" id="edad" name="edad" max="99" min="1">
+      <br>
+      <br>
+
+      <label for="genero">Genero</label>
+      <input type="radio" id="genero" name="genero" value="masc">
+      <input type="radio" id="genero" name="genero" value="fem">
+      <input type="radio" id="genero" name="genero" value="otro">
+      <br>
+      <br>
+      
+      <label for="telefono">Telefono</label>
+      <input type="text" id="telefono" name="telefono">
+
+      <br>
+      <br>
+
+      <label for="compañia">Compañia Telefono</label>
+      <select name="compañia" id="compañia">
+        <option value="Mov">Movistar</option>
+        <option value="Per">Personal</option>
+        <option value="Cla">Claro</option>
+      </select>
+
+      <br>
+      <br>
+      <label for="correo">Email</label>
+      <input type="email" id="correo" name="correo">
+
+      <br>
+      <br>
+
+      <label for="color">Color</label>
+      <input type="color" id="color" name="color">
+
+      <br>
+      <br>
+      <label for="suscripcion">Suscribirse al newsletter</label>
+      <input type="checkbox" id="suscripcion" name="suscripcion">
+
+      <br>
+      <br>
+      <button type="button" id="sendBtn">Enviar</button>
+
+    </fieldset>
+  </div>
+    </form>
+    </main>
     <footer>
       <p>Icaro 2021 Todos los derechos reservados</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
