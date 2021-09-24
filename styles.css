@@ -1,0 +1,33 @@
+/*para seleccionar a todos los elementos usamos asterisco, nos da libertad a todo, se suele usar es un
+reset de estilos*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: inline-block;
+}
+
+.persona {
+  background-color: blue;
+}
+
+/* hover para que cambie color al señalarlo con mousse*/
+.persona:hover {
+  background-color: cadetblue;
+}
+
+/*active para q cambie color al hacer click sobre elemento y con , podemos agregar mismo estilo a varias clases*/
+.persona:active,
+button {
+  background-color: chocolate;
+  /*transfor scale, lo hace mas chico al hacer click*/
+  transform: scale(0.8);
+}
+
+/*decimos que todos los elementos a ocupen todo el largo de la pagina, asi se ubican uno debajo de otro
+se les puede agregar margen y padding para separarlos y que esten inline en misma linea*/
+a {
+  display: block;
+}

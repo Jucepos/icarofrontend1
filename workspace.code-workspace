@@ -1,17 +1,17 @@
 {
   "folders": [
-	{
-		"path": "..\\Ejercicio git\\.git"
-	},
-	{
-		"path": "."
-	},
-	{
-		"name": ".git",
-		"path": ".git\\.git"
-	}
-],
+    {
+      "path": "..\\Ejercicio git\\.git"
+    },
+    {
+      "name": ".git",
+      "path": ".git\\.git"
+    },
+    {
+      "path": "..\\Proyecto Angular\\icaro-v1"
+    }
+  ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "frontend_1"
+    "liveServer.settings.multiRootWorkspaceName": "icaro-v1"
   }
 }
