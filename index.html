@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/estilos/main.css" />
+    <link rel="stylesheet" href="/estilos/reset.css" />
+    <!--defer para que lo lea ultimooo al js-->
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!--<header>
@@ -14,11 +17,11 @@
 
     <header>
       <h1>Desarrollo Web Front End</h1>
-      <nav>
-        <a href="/">Home</a>
+      <nav class="links">
+        <a class="link" href="/">Home</a>
         <!--/ donde esta parado actualmente, busca index.html-->
-        <a href="/pages/contacto.html">Contacto</a>
-        <a href="/pages/productos.html">Productos</a>
+        <a class="link" href="/pages/contacto.html">Contacto</a>
+        <a class="link" href="/pages/productos.html">Productos</a>
       </nav>
     </header>
     <main>
@@ -60,7 +63,5 @@
     <footer>
       <p>Icaro 2021 Todos los derechos reservados</p>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>

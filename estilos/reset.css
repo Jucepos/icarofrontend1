@@ -1,0 +1,6 @@
+/*para seleccionar a todos los elementos usamos asterisco, nos da libertad a todo, se suele usar es un
+reset de estilos*/
+* {
+  margin: 0;
+  padding: 0;
+}

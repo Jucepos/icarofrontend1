@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* tbm es un reset min height del body*/
+body {
+  min-height: 100vh;
+}
+
+h1 {
+  color: red;
+}
+
+/* display propiedad que decide donde ubicar un elemente: bloque (ocupa todo el largo), inline(ocupa solo hasta donde 
+llega, son los 2 mas importantes. Aparece FLEXBOX (permite q todos los hijos o elementos dentro del q tenga la propiedad
+los posiciona de manera horizontal sin importar que display tiene cada hijo
+Si no entraran en el bloque a lo largo, los va achicando por mas que tengo tamaño 100x100, no los baja los achica hasta
+que entran. Flex-wrap hace que no pierdan su tamaño sino cuando se excede baja a la siguiente linea
+Le sacamos height y widtg a .item, para explicar como flex permite mover los hijos dentro de su contenido
+*/
+
+/* Flexbox permite manejar a los hijos en los 2 ejes, principal (horizaontal por defecto) y secundario (vertical, es
+donde los hijos tratan de crecer hasta el total del tamaño) los cambio con flex-direction
+Flex-direction: row reverse - los elementos pasan de la izq y aparecen en el extremo derecho 54321
+                row - de izquierda a derecha
+                column - empieza de arriba abajo (el eje secundario para a ser el horizontal)
+                column reverse - empieza de abajo a arriba
+Justify-content: definimos donde van los elementos hijos
+                flex start - empiezan de izq a derecha 12345
+                flex end - van ls elementos a la derecha pero no en espejo como row reverse sino 12345
+                center - los elementos van al medio
+                spacebetween - se separan lo mas q puedden uno entre otro
+align-items: indica como se acomodan de acuerdo al eje secundario
+            stretch - se estiran hacia abajo, es el q viene x defecto (SI EL ITEM TIENE UN TAMAÑO DEFINIDO, NO SE ESTIRA
+            HASTA EL FINAL DEL TAMAÑO QUE DICE EL CONTENEDOR)
+            start - se van todos arriba y de acuerdo al tamaño q tienen, no estirados hasta abajo
+            end - se van al final
+            center - van al centro
+            space around - crea espacios en los elementos a los costados y quedan separados
+            space evenly - similar al anterior pero los espacios se solapan entre si, quedan mas pequeños los espacios
+            baseline - alinea a los elementos en base al contenido o padding de cada elemento, estos quedan en un renglom
+                       independientemente del paddding q tengan.
+gap: crea espacio entre elementos, es en px.
+            
+*/
+
+.item-container {
+  height: 300px;
+  background: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: orangered;
+  border: 3px solid#000;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
